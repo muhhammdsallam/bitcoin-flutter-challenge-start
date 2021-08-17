@@ -22,6 +22,7 @@ class _PriceScreenState extends State<PriceScreen> {
     }
 
     return DropdownButton<String>(
+      dropdownColor: Colors.black,
       value: selectedCurrency,
       items: dropdownItems,
       onChanged: (value) {
@@ -96,9 +97,10 @@ class _PriceScreenState extends State<PriceScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text('🤑 Coin Ticker'),
-      ),
+          title: Center(child: Text('🤑 Coin Ticker')),
+          backgroundColor: Colors.black),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -108,7 +110,7 @@ class _PriceScreenState extends State<PriceScreen> {
             height: 150.0,
             alignment: Alignment.center,
             padding: EdgeInsets.only(bottom: 30.0),
-            color: Colors.lightBlue,
+            color: Colors.black,
             child: Platform.isIOS ? iOSPicker() : androidDropdown(),
           ),
         ],
@@ -134,7 +136,7 @@ class CryptoCard extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.fromLTRB(18.0, 18.0, 18.0, 0),
       child: Card(
-        color: Colors.lightBlueAccent,
+        color: Colors.white,
         elevation: 5.0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10.0),
@@ -146,7 +148,7 @@ class CryptoCard extends StatelessWidget {
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 20.0,
-              color: Colors.white,
+              color: Colors.black,
             ),
           ),
         ),

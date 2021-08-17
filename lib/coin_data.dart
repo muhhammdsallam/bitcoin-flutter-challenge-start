@@ -1,4 +1,3 @@
-//TODO: Add your imports here.
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
@@ -23,7 +22,8 @@ const List<String> currenciesList = [
   'SEK',
   'SGD',
   'USD',
-  'ZAR'
+  'ZAR',
+  'EGP'
 ];
 
 const List<String> cryptoList = [
@@ -33,7 +33,6 @@ const List<String> cryptoList = [
   'BNB',
   'ADA',
   'DOGE',
-  'XRP',
 ];
 
 const coinAPIURL = 'https://rest.coinapi.io/v1/exchangerate';
